@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    form(action="/register" method="post")
+        div
+            label(for="username") Username:
+            input(type="text" name="username" id="username")
+
+        div
+            label(for="password") Password:
+            input(type="password" name="password" id="password")
+
+        div
+            label(for="firstName") First Name:
+            input(type="text" name="firstName" id="firstName")
+
+        div
+            label(for="lastName") Last Name:
+            input(type="text" name="lastName" id="lastName")
+
+        div
+            label(for="email") Email Address:
+            input(type="email" name="email" id="email")
+
+        div
+            input(type="submit" value="Register")
